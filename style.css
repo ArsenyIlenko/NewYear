@@ -206,15 +206,26 @@ li {
     -webkit-animation: comp-pulse 1s infinite alternate;
 }
 
+@keyframes comp-move {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
 .compliment__img {
     height: 100%;
-    transition: all 1s cubic-bezier(.75,.16,.79,.79) 0s;
+    animation: comp-move 1s infinite alternate;
+    -webkit-animation: comp-move 1s infinite alternate;
 }
+
 
 .compliment__img-talk {
     position: absolute;
     top: 50%;
-    left: -15%;
+    left: -30%;
 }
 
 .poem {
@@ -342,11 +353,30 @@ li {
     cursor: pointer;
 }
 
+@keyframes img-ded {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-450px);
+        -webkit-transform: translateX(-450px);
+        -moz-transform: translateX(-450px);
+        -ms-transform: translateX(-450px);
+        -o-transform: translateX(-450px);
+    }
+}
+
+
 .form-msg__img-wrap {
     height: 200px;
     position: absolute;
     top: -157px;
     right: 0;
+    animation: img-ded 3s infinite alternate;
 }
 
 .form-msg__img {
