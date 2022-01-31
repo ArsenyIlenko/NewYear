@@ -1,2 +1,3 @@
 # NewYear <br>
-Student Ilenko Arseny
+Arseny Ilenko <br>
+https://arsenyilenko.github.io/NewYear/
